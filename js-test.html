@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Enrolment Test</title>
+  </head>
+  <body>
+      <button class="btn">black</button>
+      <button class="btn">blue</button>
+      <button class="btn">gold</button>
+      <button class="btn">rose-gold</button> 
+      <br> <br> <br> 
+      <img src="images/black.jpeg" width="200px" alt="">
+      <script>
+
+        var allbtn = document.getElementsByTagName('button');
+        
+        for (var i = 0; i < allbtn.length; i++) {
+
+            allbtn[i].addEventListener("click", function(){
+                
+                  document.getElementsByTagName('img')[0].src = "images/"+this.innerText+".jpeg";
+                
+            }); 
+
+        }
+
+      </script>
+  </body>
+</html>
